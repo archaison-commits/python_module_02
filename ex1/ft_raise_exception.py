@@ -17,26 +17,22 @@ def test_temperature() -> None:
         valid_temp: int = input_temperature("25")
         print(f"Temperature is now {valid_temp}°C\n")
     except ValueError as e:
-        print(f"Caught input_tempretature error: Invalid literal "
-              f"for int() with base 10: {e}")
+        print(f"Caught input_tempretature error: {e}")
     try:
         invalid_temp: int = input_temperature("abc")
         print(f"Temperature is now {invalid_temp}°C\n")
     except ValueError as e:
-        print(f"Caught input_tempretature error: Invalid literal"
-              f"for int() with base 10: {e}\n")
+        print(f"Caught input_tempretature error: {e}\n")
     try:
         valid_temp = input_temperature("100")
         print(f"Temperature is now {valid_temp}°C\n")
     except ValueError as e:
-        print(f"Caught input_tempretature error: Invalid literal "
-              f"for int() with base 10: {e}")
+        print(f"Caught input_tempretature error: {e}")
     try:
         invalid_temp = input_temperature("-50")
         print(f"Temperature is now {invalid_temp}°C\n")
     except ValueError as e:
-        print(f"Caught input_tempretature error: Invalid literal"
-              f"for int() with base 10: {e}\n")
+        print(f"Caught input_tempretature error: {e}\n")
     print("All tests completed - program didn't crash")
 
 
